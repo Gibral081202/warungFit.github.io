@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WarungFit (WarFit) - Company Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Raleway", sans-serif;
+        background: linear-gradient(135deg, #f3e5f5, #b3e5fc, #c8e6c9, #ffccbc, #b2dfdb);
+        background-size: 100% 100%;
+        margin: 0;
+        opacity: 0; /* Initial opacity for fade-in effect */
+        transition: opacity 1s ease-in; /* Transition for fade-in effect */
+      }
+      .navbar {
+        background: linear-gradient(135deg, #f3e5f5, #b3e5fc);
+      }
+      .navbar-brand {
+        color: #4a4a4a !important;
+        display: flex;
+        align-items: center;
+      }
+      .navbar-brand img {
+        height: 50px;
+        margin-right: 10px;
+      }
+      .navbar-nav .nav-link {
+        color: #4a4a4a !important;
+      }
+      .jumbotron {
+        background: url("/Image/jumbotron2.jpg") no-repeat center center;
+        background-size: cover;
+        color: #00ffff;
+        background-color: #ffccbc; /* Pastel Orange */
+        padding: 100px 0;
+        margin: 0;
+      }
+      .jumbotron h1 {
+        font-size: 4rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        display: inline-flexbox;
+        padding: 10px;
+      }
+      .jumbotron p {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        display: inline-block;
+        padding: 5px;
+      }
+      .section-title {
+        margin: 20px 0 10px; /* Reduced margin */
+        text-align: center;
+        color: #4a4a4a;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .section-content {
+        margin-bottom: 10px; /* Reduced margin */
+        padding: 0 20px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .menu-item {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .menu-item img {
+        width: 100%;
+        height: 200px; /* Set a fixed height for all images */
+        object-fit: cover; /* Ensure the images cover the specified height and width */
+        border-radius: 10px;
+      }
+      .motto {
+        background-color: #c8e6c9; /* Pastel Green */
+        padding: 20px;
+        text-align: center;
+        font-style: italic;
+        color: #1d3557;
+        margin: 20px 0;
+        font-family: "Brush Script MT", cursive;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      footer {
+        background: linear-gradient(135deg, #ffccbc, #b2dfdb); /* Gradient background */
+        color: #1d3557;
+        padding: 20px 0;
+        text-align: center;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .container p {
+        color: #1d3557;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+      }
+      .visible {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img src="/Image/logo.png" alt="WarungFit Logo" />
+        WarungFit
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vision">Visi & Misi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#logo">Arti Logo</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+      <h1>Selamat Datang di WarungFit</h1>
+      <p>Slogan: Makanan Sehat, Hidup Bahagia</p>
+    </div>
+
+    <div class="container-fluid">
+      <section id="about" class="py-5">
+        <h2 class="section-title">Tentang Kami</h2>
+        <div class="section-content">
+          <p>
+            WarungFit (WarFit) adalah warung yang menyediakan berbagai macam makanan sehat dan bergizi. Kami berdedikasi untuk menyediakan makanan yang tidak hanya lezat, tetapi juga baik untuk kesehatan Anda. Dengan bahan-bahan alami dan
+            segar, kami memastikan setiap gigitan membawa manfaat bagi tubuh Anda.
+          </p>
+          <p>
+            Kami memulai usaha ini dengan tujuan untuk mempromosikan gaya hidup sehat melalui makanan. Kami percaya bahwa apa yang kita konsumsi setiap hari memiliki dampak besar pada kualitas hidup kita. Oleh karena itu, kami berkomitmen
+            untuk hanya menggunakan bahan-bahan terbaik yang dipilih dengan seksama untuk memastikan nilai gizi yang tinggi pada setiap hidangan yang kami sajikan.
+          </p>
+          <p>
+            Tim kami terdiri dari para ahli gizi, koki berpengalaman, dan pecinta makanan sehat. Kami bekerja sama untuk menciptakan menu yang tidak hanya enak di lidah tetapi juga memberikan manfaat kesehatan yang nyata. Kami juga berusaha
+            untuk selalu memberikan inovasi baru dalam setiap hidangan yang kami tawarkan agar pelanggan tidak pernah bosan dan selalu menemukan sesuatu yang baru di WarungFit.
+          </p>
+        </div>
+      </section>
+
+      <section id="vision" class="py-5">
+        <h2 class="section-title">Visi & Misi</h2>
+        <div class="row section-content">
+          <div class="col-md-6">
+            <h3>Visi</h3>
+            <p>Menjadi warung makanan sehat nomor satu di Indonesia yang memberikan dampak positif bagi kesehatan masyarakat.</p>
+          </div>
+          <div class="col-md-6">
+            <h3>Misi</h3>
+            <p>1. Menyediakan makanan sehat dengan harga terjangkau.</p>
+            <p>2. Mengedukasi masyarakat tentang pentingnya pola makan sehat.</p>
+            <p>3. Menggunakan bahan-bahan alami dan segar dalam setiap hidangan.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="motto">
+        <h2>Motto Kami</h2>
+        <p>"Menghadirkan Kesehatan dalam Setiap Sajian"</p>
+      </section>
+
+      <section id="menu" class="py-5">
+        <h2 class="section-title">Menu Kami</h2>
+        <div class="row section-content">
+          <div class="col-md-3 menu-item">
+            <img src="/Image/fitBowldelight.jpg" alt="Salad Buah" />
+            <h4>Fitbowl Delight</h4>
+            <p>Mix buah segar dengan yogurt alami.</p>
+          </div>
+          <div class="col-md-3 menu-item">
+            <img src="/Image/leanoreensalmonia.jpeg" alt="Chicken Wrap" />
+            <h4>Leanoreen Salmonia</h4>
+            <p>Daging ayam panggang dengan sayuran segar dalam tortilla.</p>
+          </div>
+          <div class="col-md-3 menu-item">
+            <img src="/Image/nutriboostchickenunach.jpeg" alt="Green Smoothie" />
+            <h4>Nutriboost Chickenunach</h4>
+            <p>Campuran bayam, pisang, dan almond milk.</p>
+          </div>
+          <div class="col-md-3 menu-item">
+            <img src="/Image/powercainbeefbowl.jpg" alt="Quinoa Bowl" />
+            <h4>Powercain Beefbowl</h4>
+            <p>Quinoa dengan sayuran panggang dan saus tahini.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="logo" class="py-5">
+        <h2 class="section-title">Arti Logo</h2>
+        <div class="section-content text-center">
+          <img src="/Image/logo.png" alt="Logo WarungFit" class="mb-4" />
+          <p>Logo WarungFit menggambarkan komitmen kami dalam menyediakan makanan sehat yang penuh warna dan kaya nutrisi. Setiap elemen dalam logo kami memiliki makna tersendiri:</p>
+          <p><strong>1. Warna Hijau:</strong> Melambangkan kesegaran dan kesehatan yang menjadi fokus utama kami.</p>
+          <p><strong>2. Buah dan Sayuran:</strong> Menunjukkan bahan-bahan alami yang kami gunakan dalam setiap hidangan.</p>
+          <p><strong>3. Bentuk Lingkaran:</strong> Melambangkan kesatuan dan keseimbangan dalam nutrisi yang kami tawarkan.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>WarungFit - Makanan Sehat, Hidup Bahagia</p>
+      <p>Alamat: Jl. Sehat No. 123, Jakarta, Indonesia</p>
+      <p>Telepon: (021) 123-4567 | Email: info@warungfit.com</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Fade-in effect on page load
+        $("body").css("opacity", 1);
+
+        // Scroll effect for sections
+        $(window).on("scroll", function () {
+          $(".section-title, .section-content, .motto, footer").each(function () {
+            if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 50) {
+              $(this).addClass("visible");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
